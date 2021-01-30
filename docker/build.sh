@@ -2,7 +2,7 @@
 
 ROOT="$PWD/src"
 OUTPUT="$PWD/output"
-TEXTBUNDLE="$ROOT/thesis.textbundle"
+TEXTBUNDLE="$ROOT/content.textbundle"
 ASSETS="$TEXTBUNDLE/assets"
 TEMPLATE="$ROOT/template"
 
@@ -72,7 +72,7 @@ latexmk -pdf -f --interaction=batchmode index.tex || exit 1
 # Copy files
 blue_echo "Copying the result to output..."
 mkdir -p "$OUTPUT"
-cp index.pdf "$OUTPUT/bachelors-thesis.pdf"
+cp index.pdf "$OUTPUT/thesis.pdf"
 
 # Cleanup (again)
 blue_echo "Cleaning up..."
