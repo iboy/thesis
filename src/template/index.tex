@@ -73,7 +73,7 @@
 \usepackage{epstopdf}
 \usepackage{memhfixc}
 
-
+\usepackage{chngcntr} % control the figure counters etc.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% CUSTOM STYLES
@@ -184,6 +184,7 @@
 
 %(though I would recommend \textsc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{{../thesis.textbundle/}{.}}
 % Define some metadata and commands
 \def\myauthor{Ian John Grant}
 \def\defaultemail{ian.grant@mac.com}
@@ -298,7 +299,7 @@ of the University of Sussex (United Kingdom)
 % \clearpage
 
 \setlength{\parindent}{1em}
-
+  
 % Set double spacing or OneHalfSpacing for the rest of the document. Double spacing looks bad.
 %\DoubleSpacing
 \OnehalfSpacing   
